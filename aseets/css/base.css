@@ -1,0 +1,114 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    line-height: 1.6rem;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+
+    --color-chudao: #cd1818;
+    --color-white: #fff;
+    --color-text-mo: #757575;
+    --color-text-nau: #bc8b75;
+    --color-text-chinh: #3d3d3d;
+    --color-yelow: #efb140;
+}
+
+@keyframes mo {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes mo-truotdoc {
+    from {
+        opacity: 0;
+        transform: translateY(var(--toado-y-batdau));
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(var(--toado-y-ketthuc));
+    }
+
+}
+
+@keyframes slide {
+
+    0%,
+    16.66%,
+    100% {
+        margin-left: 0;
+    }
+
+    20%,
+    36.66% {
+        margin-left: -100%;
+    }
+
+    40%,
+    56.66% {
+        margin-left: -200%;
+    }
+
+    60%,
+    76.66% {
+        margin-left: -300%;
+    }
+
+    80%,
+    96.66% {
+        margin-left: -400%;
+    }
+
+}
+
+@keyframes slide-mini {
+
+    0%, 33.33%,100%  {
+        margin-left: 0;
+    }
+
+    40%, 66.66% {
+        margin-left:calc(-1160px / 3);
+    }
+
+    70%,95% {
+        margin-left:calc(-1160px / 3*2);
+    }
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+

@@ -1,0 +1,397 @@
+.app__header {
+    z-index: 100;
+    position: relative;
+}
+
+
+.app__header__wrap-wire {
+    background-color: var(--color-chudao);
+}
+
+.app__header__wrap {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    z-index: 100;
+}
+
+
+.header__wrap__logo {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-right: 55px;
+}
+
+.header__wrap__logo-img {
+    width: 50px;
+}
+
+.header__wrap__logo-text {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: 800;
+
+}
+
+.header__wrap__search {
+    height: 38px;
+    display: flex;
+    position: relative;
+    flex: 1;
+    z-index: 1;
+}
+
+.header__wrap__seader__iput {
+    z-index: 2;
+    height: 100%;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--color-textmo);
+    padding: 12px 0 12px 16px;
+    flex: 1
+}
+
+.header__wrap__search__btn {
+    z-index: 2;
+    outline: none;
+    border: none;
+    width: 58px;
+    height: 38px;
+    border-radius: 0 2px 2px 0;
+    background-color: #333333;
+}
+
+.header__wrap__search__btn-icon {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.header__wrap__list {
+    z-index: 2;
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+    column-gap: 20px
+}
+
+.header__wrap__item {
+    text-align: center;
+}
+
+.header__wrap__item-link {
+    text-decoration: none;
+}
+
+.header__wrap__item__iconwire {
+    font-size: 2.4rem;
+    color: var(--color-white)
+}
+
+.header__wrap__item__text {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 4px;
+    color: var(--color-white)
+}
+
+.modal__header__wrap__search {
+    --toado-y-batdau: 30px;
+    --toado-y-ketthuc: 0;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    width: calc(110%);
+    display: none;
+    animation: mo-truotdoc 0.3s linear;
+    will-change: transform;
+    border-radius: 0px 0px 2px 2px;
+}
+
+.modal__header__wrap__search-history-header {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    display: block;
+    padding-left: 16px;
+    background-color: #f8f9fa;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--color-text-mo);
+
+
+}
+
+.modal__header__search-history-list {
+    list-style: none;
+
+
+}
+
+.modal__header__search-history-item-link:hover {
+    background-color: #f8f9fa;
+}
+
+.modal__header__search-history-item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--color-text-chinh);
+    display: block;
+    padding: 4px 0;
+    padding-left: 16px;
+
+}
+
+
+
+.modal__header__wrap__search-history {
+    display: none;
+}
+
+/* _____________________________________________________________
+các sự kiện hover trên thanh header lits
+_____________________________________________________________ */
+.header__wrap__item-thongtin:hover>.header__wrap__item__information-list {
+    display: block;
+}
+
+.header__wrap__item-thongtin {
+    position: relative;
+}
+
+.header__wrap__item__information-list li {
+    padding: 10px 0;
+}
+
+.header__wrap__item__information-list::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: -8px;
+    left: 0;
+}
+
+.header__wrap__item__information-list a {
+    text-decoration: none;
+    color: var(--color-text-chinh);
+}
+
+.header__wrap__item__information-list {
+    --toado-y-batdau: 30px;
+    --toado-y-ketthuc: 0px;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    background-color: var(--color-white);
+    width: 200%;
+    left: 0;
+    top: calc(100% + 6px);
+    font-size: 1.4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 20px;
+    animation: mo-truotdoc .3s linear;
+    display: none;
+}
+
+.header__wrap__seader__iput:focus~.modal__header__wrap__search-history,
+.header__wrap__seader__iput:focus~.modal__header__wrap__search {
+    display: block;
+}
+
+
+/* -----------------------------------------------------------------
+fpt-nav
+-------------------------------------------------------------------
+*/
+.app__header__nav {
+    background-color: #252525;
+
+
+}
+
+.app__header__nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 36px;
+    align-items: center;
+    position: relative;
+}
+
+.app__header__nav__item-link {
+    text-decoration: none;
+    color: var(--color-white);
+    display: block;
+    font-size: 1.4rem;
+}
+
+
+.app__header__nav__item {
+    display: flex;
+    color: var(--color-white);
+    align-items: center;
+    column-gap: 4px;
+
+}
+
+.app__header__nav__item i {
+    font-size: 1.5rem;
+
+}
+
+.header__nav__submn-wrap::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    left: 0;
+    top:-10px;
+}
+.header__nav__submn-wrap {
+    --toado-y-batdau:30px;
+    --toado-y-ketthuc:0px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    color: var(--color-text-chinh);
+    display: none;
+    background-color: var(--color-white);
+    animation: mo-truotdoc .2s linear;
+}
+
+.bde {
+    border-right: 1px solid blanchedalmond;
+    background-color: var(--color-white);
+
+}
+
+
+.row {
+
+   
+}
+
+
+
+.header__nav__submn__menu__header {
+    FONT-SIZE: 1.3REM;
+    font-weight: 500;
+    padding: 8px 0 12px;
+}
+
+
+.header__nav__submn__menu__list li {
+    padding: 5px 0;
+}
+
+.header__nav__submn__menu__list-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__nav__submn__menu__list a {
+    color: var(--color-text-chinh);
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    word-wrap: break-word;
+}
+
+.header__nav__submn__menu__list {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+/* các thẻ li  chia thành 3 cột */
+.header__nav__submn__menu__list .header__nav__submn__menu__item-3 {
+    flex: 33.33333%;
+    max-width: 33.33333%;
+    padding-right: 12px;
+}
+
+/* các thẻ li  chứa các sản phẩm trong nav có chứa hình ảnh */
+.header__nav__submn__menu__item-SP {
+    margin-bottom: 6px;
+}
+
+/* thẻ li chứa ảnh100% trong thẻ nav khi hover để hiện lên */
+.header__nav__submn__menu__img-wrap {
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header__nav__submn__menu__img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.header__nav__submn__menu__item__img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+
+}
+
+.header__nav__submn__menu__item__tissue {
+    width: 190px;
+    padding-left: 6px;
+}
+
+.header__nav__submn__menu__item__tissue__title {
+
+    display: block;
+}
+
+.header__nav__submn__menu__item__tissue__price {
+    color: #D0021b;
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+}
+
+/* phần tử có nav con riêng biệt vì nó có nav list nhỏ hơn và làm thẻ ul luôn không dùng div nhung nó sẽ ăn thuộc tính của thẻ li không phải ăn thuộc tính của thẻ ul như các nav list khác */
+.app__header__nav__item-othersize {
+    position: relative;
+}
+
+.header__nav__submn-wrap-othersize-sale {
+    right: 0;
+    left: auto;
+}
+
+.header__nav__submn-wrap-othersize-accessory {
+    left: 0
+}
+
+.header__nav__submn-wrap-othersize li {
+    padding: 8px 0;
+}
+
+.header__nav__submn-wrap-othersize {
+    width: 150%;
+    top: calc(100% + 10px);
+    position: absolute;
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 0 10px 10px;
+}
+
+/* sự kiện trong nav hover */
+.app__header__nav__item:hover>.header__nav__submn-wrap {
+    display: block;
+}
